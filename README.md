@@ -21,6 +21,9 @@ realize vue-router
 
 ## 手写分析
 1. 包装导出插件供Vue.use使用
+    - 如果参数里没有install这个属性，执行参数本身
+    - 如果参数里有install这个属性，就只执行install
+    - 如果use（）的参数接收参数，第一个参数会传Vue
 2. VueRouter实例
 3. main.js中注册
 4. 两个全局组件
